@@ -20,6 +20,7 @@ export default class Person extends Component {
     };
   }
   componentDidMount() {
+    // 需要根据参数拉取用户信息
     console.log(getCurrentInstance().router.params);
   }
   render() {
