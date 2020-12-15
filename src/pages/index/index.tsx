@@ -13,13 +13,16 @@ export default class Index extends Component {
   constructor() {
     super(...arguments);
     this.state = {
-      current: 0,
+      current: 2,
     };
   }
   handleClick(value) {
     this.setState({
       current: value,
     });
+  }
+  onLaunch(options) {
+    console.log(options);
   }
   render() {
     return (

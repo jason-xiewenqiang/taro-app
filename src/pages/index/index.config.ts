@@ -7,8 +7,6 @@ export const tabBar = [
 
 export const pages = [
   '/pages/index/index',
-  '/pages/workbench/index',
-  '/pages/address/index',
 ]
 
 export default {
