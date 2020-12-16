@@ -13,7 +13,7 @@ export default class Index extends Component {
   constructor() {
     super(...arguments);
     this.state = {
-      current: 2,
+      current: 1,
     };
   }
   handleClick(value) {
