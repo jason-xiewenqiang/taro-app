@@ -1,24 +1,60 @@
-import React, { Component } from 'react';
-import { View, Text } from '@tarojs/components';
-import { AtDivider} from 'taro-ui';
+import React, { Component } from "react";
+import { View, Text } from "@tarojs/components";
+import { AtDivider } from "taro-ui";
+import { v4 as uuidv4 } from "uuid";
+import { navigateTo } from '@tarojs/taro'
 import "taro-ui/dist/style/components/divider.scss";
-import './unread.scss';
+import "./unread.scss";
 export default class Unread extends Component {
-    constructor() {
-        super(...arguments);
-    }
-    render() {
-        return (
-            <View className="unread">
-                <View className="card">
-                    <View className="time">12:23</View>
-                    <View className="content">
-                        <Text>共济科技机房监控巡检</Text>
-                        <AtDivider content='' className="divider"/>
-                        <Text>查看详情</Text>
-                    </View>
-                </View>
+  constructor() {
+    super(...arguments);
+    this.state = {
+      messages: [
+        {
+          id: uuidv4(),
+          time: "2020-12-18 12:30",
+          info: "会议通知：产品设计部会议即将开始 会议时间：2020-12-18 10:30 会议地点：....",
+        },
+        {
+          id: uuidv4(),
+          time: "昨天 12:30",
+          info: "会议通知：产品设计部会议即将开始 会议时间：2020-12-18 10:30 会议地点：....",
+        },
+        {
+          id: uuidv4(),
+          time: "11:12",
+          info: "会议通知：产品设计部会议即将开始 会议时间：2020-12-18 10:30 会议地点：....",
+        },
+        {
+          id: uuidv4(),
+          time: "16:30",
+          info: "会议通知：产品设计部会议即将开始 会议时间：2020-12-18 10:30 会议地点：....",
+        },
+      ],
+    };
+    this.checkDetail.bind(this)
+  }
+  checkDetail(info) {
+    console.log('查看详情', info)
+    navigateTo({
+        url: `/pages/detail/index?id=${info.id}`
+      })
+  }
+  render() {
+    const { messages } = this.state;
+    return (
+      <View className="unread">
+        {messages.map(msg => (
+          <View className="card" key={msg.time}>
+            <View className="time">{msg.time}</View>
+            <View className="content">
+              <Text>{msg.info}</Text>
+              <AtDivider content="" className="divider" />
+              <Text className="check" onClick={() => {this.checkDetail(msg)}}>查看详情</Text>
             </View>
-        )
-    }
+          </View>
+        ))}
+      </View>
+    );
+  }
 }
