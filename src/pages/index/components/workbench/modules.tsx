@@ -51,17 +51,37 @@ export default class Modules extends Component {
             { name:'模块3', id: uuidv4() },
             { name:'模块4', id: uuidv4() },
             { name:'模块5', id: uuidv4() },
+            { name:'模块5', id: uuidv4() },
+            { name:'模块5', id: uuidv4() },
+            { name:'模块5', id: uuidv4() },
+            { name:'模块5', id: uuidv4() },
+            { name:'模块5', id: uuidv4() },
+            { name:'模块5', id: uuidv4() },
           ]
         },
       ]
     }
   }
+  // 点击了一个模块
+  moduleItemClick(item) {
+    console.log(item)
+  }
+  // 点击了一个处理项
+  handleItemClick(mission) {
+    console.log(mission)
+    this.props.changeView(mission)
+  }
   render() {
+    const {groups} = this.state;
     return (
         <View className="modules-view">
-          <ModulesHeader/>
+          <ModulesHeader handleItemClick={this.handleItemClick.bind(this)}/>
           <View className="groups">
-            <Group/> 
+            {
+              groups.map(group =>(
+                <Group item={group} key={group.id} itemClick={this.moduleItemClick.bind(this)}/> 
+              ))
+            }
           </View>
         </View>
     );

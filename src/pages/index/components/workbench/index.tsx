@@ -10,8 +10,13 @@ export default class Workbench extends Component {
       current: "module",
     };
   }
+  changeView() {
+    this.setState({
+      current: 'padding'
+    })
+  }
   render() {
     const { current } = this.state;
-    return <View>{current === "module" ? <Modules /> : <Padding />}</View>;
+    return <View>{current === "module" ? <Modules changeView={this.changeView.bind(this)}/> : <Padding />}</View>;
   }
 }
