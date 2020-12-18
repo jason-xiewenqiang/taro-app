@@ -1,0 +1,15 @@
+.my-list {
+  .at-list__item-container .at-list__item-thumb {
+    width: 84px !important;
+    height: 84px !important;
+    background-color: #e7e6e6;
+    border-radius: 12px;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  .at-list__item--thumb .item-thumb__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

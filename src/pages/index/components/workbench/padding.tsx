@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { View, Text } from "@tarojs/components";
-import { v4 as uuidv4 } from "uuid";
 import PaddingCard from './padding-card';
 import { navigateTo } from '@tarojs/taro'
 export default class Padding extends Component {
@@ -15,7 +14,7 @@ export default class Padding extends Component {
           type: '事件处理',
           time: '2020-12-17',
           system: '工单',
-          id: uuidv4()
+          id: 'uuidv4'
         },
         {
           name: '机房巡检',
@@ -24,7 +23,7 @@ export default class Padding extends Component {
           type: '事件处理',
           time: '2020-12-17',
           system: '工单',
-          id: uuidv4()
+          id: 'uuidv4'
         },
         {
           name: '机房巡检',
@@ -33,7 +32,7 @@ export default class Padding extends Component {
           type: '事件处理',
           time: '2020-12-17',
           system: '工单',
-          id: uuidv4()
+          id: 'uuidv4'
         },
         {
           name: '机房巡检',
@@ -42,7 +41,7 @@ export default class Padding extends Component {
           type: '事件处理',
           time: '2020-12-17',
           system: '工单',
-          id: uuidv4()
+          id: 'uuidv4'
         },
       ]
     }

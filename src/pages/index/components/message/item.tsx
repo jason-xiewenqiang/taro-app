@@ -1,18 +1,17 @@
 import React, { Component } from "react";
 import { AtSwipeAction, AtListItem } from "taro-ui";
 import "taro-ui/dist/style/components/swipe-action.scss";
-
+import './item.scss';
 export default class Item extends Component {
   constructor() {
     super(...arguments);
-    this.clickHandler.bind(this)
+    this.clickHandler.bind(this);
   }
   clickHandler() {
     console.log("click");
   }
   render() {
     return (
-
       <AtSwipeAction
         options={[
           {
@@ -30,7 +29,9 @@ export default class Item extends Component {
         ]}
       >
         <AtListItem
-          onClick={() =>{this.clickHandler(this.props.data)}}
+          onClick={() => {
+            this.clickHandler(this.props.data);
+          }}
           title={this.props.data.title}
           note={this.props.data.note}
           extraText={this.props.data.time}

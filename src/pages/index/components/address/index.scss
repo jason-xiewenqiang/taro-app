@@ -7,29 +7,15 @@
   display: flex;
   .back {
     font-size: 24px;
-    width: 60PX;
-    line-height: 43PX;
+    width: 120px;
+    line-height: 86px;
     text-align: center;
   }
   .search-box {
     flex: 1;
   }
-}
-.weui-input {
-  height: 30PX;
-}
-.at-list__item--thumb .item-thumb {
-  width: 42PX !important;
-  height: 42PX !important;
-  background-color: #e7e6e6;
-  border-radius: 6PX;
-}
-.item-thumb__info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img {
-    width: 75%;
-    height: 75%;
+  .weui-input {
+    height: 60px;
   }
 }
+

@@ -26,8 +26,8 @@ export default class ModulesHeader extends Component {
                 <AtBadge value={mission.count} maxValue={99}>
                   <AtIcon value="file-generic" size="50" color="#000"></AtIcon>
                 </AtBadge>
+                <View className="text">{mission.name}</View>
               </View>
-              <View className="text">{mission.name}</View>
             </View>
           ))}
         </View>

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { View, Text } from "@tarojs/components";
 import { AtDivider } from "taro-ui";
-import { v4 as uuidv4 } from "uuid";
 import { navigateTo } from '@tarojs/taro'
 import "taro-ui/dist/style/components/divider.scss";
 import "./unread.scss";
@@ -11,22 +10,18 @@ export default class Unread extends Component {
     this.state = {
       messages: [
         {
-          id: uuidv4(),
           time: "2020-12-18 12:30",
           info: "会议通知：产品设计部会议即将开始 会议时间：2020-12-18 10:30 会议地点：....",
         },
         {
-          id: uuidv4(),
           time: "昨天 12:30",
           info: "会议通知：产品设计部会议即将开始 会议时间：2020-12-18 10:30 会议地点：....",
         },
         {
-          id: uuidv4(),
           time: "11:12",
           info: "会议通知：产品设计部会议即将开始 会议时间：2020-12-18 10:30 会议地点：....",
         },
         {
-          id: uuidv4(),
           time: "16:30",
           info: "会议通知：产品设计部会议即将开始 会议时间：2020-12-18 10:30 会议地点：....",
         },
@@ -37,7 +32,7 @@ export default class Unread extends Component {
   checkDetail(info) {
     console.log('查看详情', info)
     navigateTo({
-        url: `/pages/detail/index?id=${info.id}`
+        url: `/pages/detail/index?id=${info.time}`
       })
   }
   render() {

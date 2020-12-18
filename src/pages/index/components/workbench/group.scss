@@ -1,26 +1,26 @@
 @import "~taro-ui/dist/style/components/icon.scss";
 @import "~taro-ui/dist/style/components/avatar.scss";
 .pre-group {
-  padding: 10PX;
+  padding: 10px;
   .group-name {
     box-sizing: border-box;
-    font-size: 16PX;
+    font-size: 32px;
     color:#666;
-    margin-bottom: 10PX;
-    padding-left: 10PX; 
+    margin-bottom: 20px;
+    padding-left: 20px; 
   }
   .group-items {
     display: flex;
     flex-wrap: wrap;
-    font-size: 14PX;
+    font-size: 28px;
     .group-item {
       width: 33.33%;
       box-sizing: border-box;
-      margin-bottom: 4%;
-      padding-left: 20PX;
+      margin-bottom: 40px;
+      padding-left: 40px;
       .at-avatar {
-        width: 32PX;
-        height: 32PX;
+        width: 64px;
+        height: 64px;
         display: inline-block;
         vertical-align: middle;
         margin-right: 10px;
