@@ -4,3 +4,6 @@
     width: 96px !important;
   }
 }
+.at-list__item::after {
+  left: 0;
+}

@@ -1,11 +1,11 @@
 {
-  "name": "react-app",
+  "name": "gongjikeji",
   "version": "1.0.0",
   "private": true,
-  "description": "",
+  "description": "移动页面taro js 版本",
   "templateInfo": {
-    "name": "taro-ui",
-    "typescript": true,
+    "name": "redux",
+    "typescript": false,
     "css": "sass"
   },
   "scripts": {
@@ -34,38 +34,34 @@
     "ios >= 8"
   ],
   "author": "",
+  "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.7.7",
-    "@tarojs/cli": "3.0.17",
-    "@tarojs/components": "3.0.17",
-    "@tarojs/react": "3.0.17",
-    "@tarojs/redux": "^2.2.10",
-    "@tarojs/runtime": "3.0.17",
-    "@tarojs/taro": "3.0.17",
-    "lodash": "4.17.15",
+    "@tarojs/components": "3.0.18",
+    "@tarojs/react": "3.0.18",
+    "@tarojs/runtime": "3.0.18",
+    "@tarojs/taro": "3.0.18",
+    "lodash": "^4.17.20",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
-    "redux": "^4.0.5",
-    "redux-action": "^1.2.2",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
-    "taro-ui": "^3.0.0-alpha.3",
-    "uuid": "^8.3.2"
+    "redux-thunk": "^2.3.0",
+    "taro-ui": "^3.0.0-alpha.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.0",
-    "@tarojs/mini-runner": "3.0.17",
-    "@tarojs/webpack-runner": "3.0.17",
     "@types/webpack-env": "^1.13.6",
-    "babel-preset-taro": "3.0.17",
-    "eslint": "^6.8.0",
-    "eslint-config-taro": "3.0.17",
-    "stylelint": "9.3.0",
-    "@typescript-eslint/parser": "^2.x",
-    "@typescript-eslint/eslint-plugin": "^2.x",
-    "typescript": "^3.7.0",
     "@types/react": "^16.0.0",
+    "@tarojs/mini-runner": "3.0.18",
+    "@babel/core": "^7.8.0",
+    "@tarojs/webpack-runner": "3.0.18",
+    "babel-preset-taro": "3.0.18",
+    "eslint-config-taro": "3.0.18",
+    "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.8.2",
     "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-react-hooks": "^1.6.1"
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "stylelint": "9.3.0"
   }
 }

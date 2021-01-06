@@ -1,13 +1,13 @@
+@import "~taro-ui/dist/style/components/nav-bar.scss";
 @import "~taro-ui/dist/style/components/search-bar.scss";
 @import "~taro-ui/dist/style/components/button.scss";
-@import "~taro-ui/dist/style/components/icon.scss";
 @import "~taro-ui/dist/style/components/list.scss";
 @import "~taro-ui/dist/style/components/icon.scss";
 .at-list__item--thumb .item-thumb {
-  width: 42PX !important;
-  height: 42PX !important;
+  width: 84px !important;
+  height: 84px !important;
   background-color: #e7e6e6;
-  border-radius: 6PX;
+  border-radius: 12px;
 }
 .item-thumb__info {
   display: flex;
@@ -18,14 +18,22 @@
     height: 75%;
   }
 }
+.person-info .at-nav-bar__left-view .at-icon{
+  font-size: 42px;
+  position: relative;
+  top: 2px;
+}
+.person-info .at-nav-bar__left-view .at-nav-bar__text{
+  padding-left: 0;
+}
 .info-item {
-  height: 50PX;
+  height: 100px;
   // border-bottom: 1PX solid #d6e4ef;
-  line-height: 50PX;
+  line-height: 100px;
   font-size: 28px;
   position: relative;
   .label {
-    width: 100PX;
+    width: 200px;
     text-align: left;
     box-sizing: border-box;
     padding: 0 40px;
@@ -57,5 +65,5 @@
   -webkit-transform: scaleY(0.5);
   -ms-transform: scaleY(0.5);
   transform: scaleY(0.5);
-  border-bottom: 1PX solid #d6e4ef;
+  border-bottom: 2px solid #d6e4ef;
 }

@@ -1,3 +1,21 @@
+@import "~taro-ui/dist/style/components/nav-bar.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+
 .padding-page {
-  padding: 20px;
+  .at-nav-bar__left-view .at-icon{
+    font-size: 42px;
+    position: relative;
+    top: 2px;
+  }
+  .at-nav-bar__left-view .at-nav-bar__text{
+    padding-left: 0;
+  }
+  padding-top: 92px;
+  .padding-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
 }

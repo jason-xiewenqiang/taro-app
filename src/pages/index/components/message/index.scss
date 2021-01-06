@@ -1,13 +1,23 @@
 .message-view {
-    height: calc(100% - 130px);
+    height: calc(100% - 170px);
     box-sizing: border-box;
-    padding-top: 60px;
+    padding-top: 96px;
+    .control-box {
+      box-sizing: border-box;
+      padding: 15px;
+      position: fixed;
+      top:0;
+      left: 0;
+      z-index: 10;
+      height: auto;
+      width:100%;
+      background-color: #fff;
+    }
     .at-segmented-control {
-        position: fixed;
-        top:0;
-        left: 0;
-        z-index: 10;
-        height: 64px;
-        line-height: 48px;
+      height: 64px;
+      position: relative;
+      top:-10px;
+      left: 0;
+      line-height: 48px;
     }
 }

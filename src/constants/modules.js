@@ -1,0 +1,8 @@
+export const MODULES_VIEW = 'modules_view'
+export const MODULES_LIST = 'modules_list'
+export const MODULES_UNDO = 'modules_undo'
+export const MODULES_DONE = 'modules_done'
+export const MODULES_START = 'modules_start'
+export const MODULES_RECEIVE = 'modules_receive'
+export const MODULES_GROUP = 'modules_group'
+export const MODULES_COUNT = 'modules_count'

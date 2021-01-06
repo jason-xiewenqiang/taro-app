@@ -1,5 +1,7 @@
 @import "~taro-ui/dist/style/components/icon.scss";
 @import "~taro-ui/dist/style/components/avatar.scss";
+@import "~taro-ui/dist/style/components/grid.scss";
+
 .pre-group {
   padding: 10px;
   .group-name {
@@ -7,7 +9,20 @@
     font-size: 32px;
     color:#666;
     margin-bottom: 20px;
-    padding-left: 20px; 
+    padding-left: 30px;
+    position: relative;
+  }
+  .group-name::before {
+    content: "";
+    display: block;
+    height: 90%;
+    width: 6px;
+    background-color: #6190E8;
+    position: absolute;
+    left: 10px;
+    top: 5%;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 2px 0px 8px #6190E8;
   }
   .group-items {
     display: flex;
@@ -16,8 +31,23 @@
     .group-item {
       width: 33.33%;
       box-sizing: border-box;
-      margin-bottom: 40px;
-      padding-left: 40px;
+      text-align: left;
+      height: 108px;
+      line-height: 108px;
+      padding-left: 20px;
+      > i {
+        font-size: 48px;
+        vertical-align: middle;
+        margin-right: 6px;
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        padding: 8px;
+        text-align: center;
+        border-radius: 12px;
+        line-height: 48px;
+        background-color: #f2f2f2;
+      }
       .at-avatar {
         width: 64px;
         height: 64px;
